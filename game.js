@@ -5,6 +5,7 @@ const ctx = canvas.getContext("2d");
 const GRID_SIZE = 20;
 const CANVAS_WIDTH = 800;
 const CANVAS_HEIGHT = 600;
+const FRAME_RATE = 200; // Time in milliseconds for each game tick (200ms = 5 frames per second)
 
 // Snake class to manage snake properties and methods
 class Snake {
@@ -183,14 +184,14 @@ class Game {
 // Instantiate the game object
 const game = new Game();
 
-// Start the game loop
+// Start the game loop with a fixed interval
 function gameLoop() {
   game.update();
 
   if (game.gameOver) {
     game.end();
   } else {
-    requestAnimationFrame(gameLoop);
+    setTimeout(gameLoop, FRAME_RATE); // Slower loop, every 200ms
   }
 }
 
