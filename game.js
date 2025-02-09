@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 let playerX = canvas.width / 2;
 let playerY = canvas.height - 30;
-let playerSpeed = 5;
+const playerSpeed = 5;
 
 const keys = [false, false, false, false];
 
