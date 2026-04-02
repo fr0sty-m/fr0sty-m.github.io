@@ -7,9 +7,10 @@ if (id) {
     .then(data => {
       const product = data.find(p => p.id == id);
 
+      const detailImg = product.img || product.image || 'images/image.png';
       document.getElementById("productDetail").innerHTML = `
         <h1>${product.name}</h1>
-        <img src="${product.img}" style="width:300px;">
+        <img src="${detailImg}" style="width:300px;">
         <p>${product.desc}</p>
       `;
     });

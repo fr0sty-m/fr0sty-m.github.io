@@ -8,9 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = `product-detail.html?id=${id}`;
   };
 
-  const buildCard = (p) => `
+  const buildCard = (p) => {
+    const imageSrc = p.img || p.image || 'images/image.png';
+    return `
     <article class="product-card reveal">
-      <img src="${p.img}" alt="${p.name}">
+      <img src="${imageSrc}" alt="${p.name}">
       <div class="product-card-content">
         <h3>${p.name}</h3>
         <p>${p.desc}</p>
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </article>
   `;
+  };
 
   fetch(productUrl)
     .then((res) => {
@@ -33,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
       window.dispatchEvent(new Event('reveal:update'));
     })
     .catch((err) => {
-      console.error(err);
-      container.innerHTML = '<p class="error-state">Ürünler yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.</p>';
+      console.error('Products fetch error:', err);
+      container.innerHTML = '<p class="error-state">Ürünler yüklenirken bir hata oluştu. Lütfen sayfayı bir yerel sunucuda (örn. python -m http.server) açıp tekrar deneyiniz.</p>';
     });
 
   window.goDetail = goDetail;

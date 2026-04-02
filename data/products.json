@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Fiber Lazer Kesim Makinesi",
     "desc": "Hassas çelik kesiminde 30 mm kapasiteli, yüksek verimli fiber lazer.",
-    "img": "https://images.unsplash.com/photo-1611971431180-3f4db094d3d4?auto=format&fit=crop&w=800&q=80"
+    "img": "images/image.png"
   },
   {
     "id": 2,
     "name": "CO2 Lazer Kesim Makinesi",
     "desc": "Akrilik, ahşap ve ince metallerde düşük bakım maliyetli kesim.",
-    "img": "https://images.unsplash.com/photo-1517971071642-34a2d9a82245?auto=format&fit=crop&w=800&q=80"
+    "img": "images/co2lazer.jpg"
   },
   {
     "id": 3,
     "name": "Otomatik Paletli Lazer Sistemi",
     "desc": "Sürekli üretim için robotik parça yükleme ve tampon palet çözümü.",
-    "img": "https://images.unsplash.com/photo-1474430488032-2a5c0ea5e5d6?auto=format&fit=crop&w=800&q=80"
+    "img": "https://www.aslanlarmakina.com.tr/wp-content/uploads/2023/04/aslanlar-makine-tam-otomatik-kuru-tel-cekme-makinesi-fotograf.jpg"
   },
   {
     "id": 4,
     "name": "4K CNC Lazer Markalama",
     "desc": "Yüksek çözünürlük, karmaşık desen ve seri üretim markalaması.",
-    "img": "images/cnc_lazer.png"
+    "img": "images/image.png"
   },
   {
     "id": 5,
     "name": "CNC Router",
     "desc": "Ahşap, plastik ve kompozit malzemeleri hızlı frezeleme.",
-    "img": "https://images.unsplash.com/photo-1581091121985-4e6aa08f44e7?auto=format&fit=crop&w=800&q=80"
+    "img": "images/co2lazer.jpg"
   },
   {
     "id": 6,
     "name": "Otomatik Tel Çekme",
     "desc": "Yüksek hassasiyette tel form ve kesim sağlayan tezgah.",
-    "img": "https://images.unsplash.com/photo-1487448843130-2f8f8f3b053f?auto=format&fit=crop&w=800&q=80"
+    "img": "https://www.aslanlarmakina.com.tr/wp-content/uploads/2023/04/aslanlar-makine-tam-otomatik-kuru-tel-cekme-makinesi-fotograf.jpg"
   }
 ]
