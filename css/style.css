@@ -36,7 +36,7 @@ nav {
   border-bottom: 1px solid #e6ebf2;
   padding: 16px 32px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   transition: all 0.3s ease;
 }
@@ -256,4 +256,42 @@ footer { background: var(--dark); color:#fff; text-align:center; padding:24px; f
 }
 .product-card:hover::after {
   opacity: 1;
+}
+
+/* Hamburger icon gizli büyük ekranlarda */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--dark);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Mobil için: 900px altı */
+@media (max-width:900px){
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px; /* nav yüksekliği */
+    right: 0;
+    background: var(--surface);
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
